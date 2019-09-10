@@ -7,9 +7,7 @@
     <script src="script/weatherJS.js"></script>
     <script defer src="script/clock.js"></script>
     <script defer src="script/text.js"></script>
-    <script defer src="script/toDoList.js"></script>
     <script defer src="script/calendar.js"></script>
-    <script defer src="script/timer.js"></script>
     <script src="https://kit.fontawesome.com/e3949abc2e.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
@@ -75,43 +73,39 @@
         </header>
         <canvas id="canvas"></canvas>
       </div>
-
-    <h1>Pomodoro Timer</h1>
-
-    <h3 id="greeting">"ПОСТАНОВКА ЦЕЛЕЙ ЯВЛЯЕТСЯ ПЕРВЫМ ШАГОМ НА ПУТИ <br> ПРЕВРАЩЕНИЯ МЕЧТЫ В РЕАЛЬНОСТЬ"<br> Приветствуем, <span id="userName"></span>! <br> Следите за своим прогрессом c помощью нашего приложения </h3>
-
-    <div id="pomodoro">  
-      <img src="picture/tom.png" style="width:400px; height:400px">
-      <div id="status"></div>
-      <div class="timerDisplay">25:00</div>
-      <button id="start-btn" class="btn">СТАРТ!</button>
-    </div>
-
-    <div class="settings">
-      <div id="work">
-        <p>Время работы</p>
-        <button class="btn-settings" id="work-plus">+</button>
-        <div><span id="work-min">25</span> мин</div>
-        <button class="btn-settings" id="work-minus">-</button>
+      <h1>Pomodoro Timer</h1>
+      <h3 id="greeting">"ПОСТАНОВКА ЦЕЛЕЙ ЯВЛЯЕТСЯ ПЕРВЫМ ШАГОМ НА ПУТИ <br> ПРЕВРАЩЕНИЯ МЕЧТЫ В РЕАЛЬНОСТЬ"<br> Приветствуем, <span id="userName"></span>! <br> Следите за своим прогрессом c помощью нашего приложения </h3>
+        <div id="pomodoro">  
+        <img src="picture/tom.png" style="width:400px; height:400px">
+        <div id="status"></div>
+        <div class="timerDisplay">25:00</div>
+        <button id="start-btn" class="btn">СТАРТ!</button>
       </div>
 
-      <button id="reset" class="btn">Обновить</button>
+      <div class="settings">
+        <div id="work">
+          <p>Время работы</p>
+          <button class="btn-settings" id="work-plus">+</button>
+          <div><span id="work-min"></span> мин</div>
+          <button class="btn-settings" id="work-minus">-</button>
+        </div>
 
-      <div id="break">
-        <p>Время отдыха</p>
-        <button class="btn-settings" id="break-plus">+</button>
-        <div><span id="break-min">5</span> мин</div>
-        <button class="btn-settings" id="break-minus">-</button>
+        <button id="reset" class="btn">Обновить</button>
+
+        <div id="break">
+          <p>Время отдыха</p>
+          <button class="btn-settings" id="break-plus">+</button>
+          <div><span id="break-min"></span> мин</div>
+          <button class="btn-settings" id="break-minus">-</button>
+        </div>
       </div>
-    </div>
 <!-- Строим ToDoList с заданиями "помидорками" -->
     <div id="tasks">
       <div id="toDo" class="header">
         <h2>Список "помидор"</h2>
         <input type="text" id="myInput" placeholder="Задача">
-        <span onclick="newElement()" class="addBtn">Добавить</span>
+        <span id="addToDo" class="addBtn">Добавить</span>
       </div>
-
       <ul id="myUL">
         <li>Прочитать учебную литературу</li>
         <li class="checked">Пересчитать затраты на ремонт</li>
@@ -149,12 +143,10 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
 <script src="script/firebase.js"></script>
-<script src="script/listproj.js"></script>  
-<!--<script src="datagr.js"></script>-->
 <script src="script/cookies.js"></script>
-<script src="script/charts.js"></script>
 <script src="script/task.js"></script>
 <script src='script/algoTree.js'></script>
+<script src="script/combo.js"></script>
 
 </body>
 </html>
